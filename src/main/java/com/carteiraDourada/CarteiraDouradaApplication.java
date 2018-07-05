@@ -37,7 +37,7 @@ public class CarteiraDouradaApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... arg0) throws Exception {
-		Usuario usuario = new Usuario("Elton", "elton@iftm.edu.br", "12345678", "A, B");
+		Usuario usuario = new Usuario("Walter", "walter@iftm.edu.br", "12345678", "A, B");
 		userService.insert(usuario);
 		usuario.setId(1);
 
