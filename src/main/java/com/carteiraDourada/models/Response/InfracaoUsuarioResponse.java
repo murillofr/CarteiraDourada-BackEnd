@@ -10,7 +10,9 @@ public class InfracaoUsuarioResponse {
 
     private String usuario;
 
-    private String infracao;
+    private String infracaoId;
+    
+    private String infracaoNome;
 
     private String veiculo;
 
@@ -35,12 +37,20 @@ public class InfracaoUsuarioResponse {
         this.usuario = usuario;
     }
 
-    public String getInfracao() {
-        return infracao;
+    public String getInfracaoId() {
+        return infracaoId;
     }
 
-    public void setInfracao(String infracao) {
-        this.infracao = infracao;
+    public void setInfracaoId(String infracao) {
+        this.infracaoId = infracao;
+    }
+    
+    public String getInfracaoNome() {
+        return infracaoNome;
+    }
+
+    public void setInfracaoNome(String infracao) {
+        this.infracaoNome = infracao;
     }
 
     public String getVeiculo() {

@@ -64,7 +64,8 @@ public class InfracaoUsuarioService {
     private InfracaoUsuarioResponse convertToDTo(InfracaoUsuario user) {
         InfracaoUsuarioResponse userDTO = new InfracaoUsuarioResponse();
         userDTO.setId(user.getId());
-        userDTO.setInfracao(user.getInfracao().getId().toString());
+        userDTO.setInfracaoId(user.getInfracao().getId().toString());
+        userDTO.setInfracaoNome(user.getInfracao().getNome().toString());
         userDTO.setVeiculo(user.getVeiculo().getId().toString());
         userDTO.setUsuario(user.getUsuario().getId().toString());
         userDTO.setInstante(user.getInstante());
